@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Muskan Patil — Full-Stack Engineer building multi-tenant SaaS, systems architecture, and integrations for enterprise hospitality platforms."
+    />
+    <meta name="author" content="Muskan Patil" />
+    <meta property="og:title" content="Muskan Patil — Full-Stack Engineer" />
+    <meta
+      property="og:description"
+      content="Full-Stack Engineer specializing in multi-tenant SaaS, systems architecture, and enterprise integrations."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Muskan Patil — Full-Stack Engineer • Multi-Tenant SaaS</title>
+    <script>
+      // Prevent theme flash: apply persisted/system theme before first paint.
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = stored || (prefersDark ? 'dark' : 'light');
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
