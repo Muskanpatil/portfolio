@@ -58,11 +58,13 @@
     scroll-padding-top: 4.5rem;
   }
 
-  html,
   body {
-    /* Guard against stray horizontal scroll from decorative/animated elements. */
+    /* Guard against stray horizontal scroll from decorative/animated elements.
+       `clip` (not `hidden`) so the root scroll container / scrollingElement is
+       unchanged — otherwise scroll-padding, scrollIntoView and window.scrollY
+       tracking (navbar glass state) all break. */
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   body {
