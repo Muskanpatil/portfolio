@@ -1,6 +1,6 @@
 # Portfolio — Muskan Patil
 
-Personal portfolio site for Muskan Patil (Full-Stack Engineer, multi-tenant SaaS).
+Personal portfolio site for Muskan Patil (Full-Stack Developer, multi-tenant SaaS).
 
 ## Stack
 - **Framework:** Vite + React 19 + TypeScript

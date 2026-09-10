@@ -1,4 +1,5 @@
 import { About } from './components/About';
+import { BackToTop } from './components/BackToTop';
 import { Contact, Footer } from './components/Contact';
 import { DeepDives } from './components/DeepDives';
 import { Experience } from './components/Experience';
@@ -24,6 +25,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }

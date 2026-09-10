@@ -8,7 +8,7 @@ export function Experience() {
       id="experience"
       eyebrow="Experience & Impact"
       title="From microservices to monorepos — and the numbers that came with it."
-      description="A compact timeline of where I’ve worked, what I owned, and the measurable outcomes."
+      description="A compact timeline of where I’ve worked, what I owned, the measurable outcomes, and where I studied."
     >
       {/* Achievements metrics */}
       <Reveal>
@@ -18,7 +18,7 @@ export function Experience() {
               key={a.label}
               className="rounded-2xl border border-default bg-card p-5 text-center transition-colors hover:border-brand-500/40"
             >
-              <div className="gradient-text font-display text-2xl font-800 tracking-tight sm:text-3xl">
+              <div className="gradient-text font-display text-xl font-800 tracking-tight [overflow-wrap:anywhere] sm:text-3xl">
                 {a.value}
               </div>
               <div className="mt-2 text-xs font-600 leading-snug text-soft">{a.label}</div>
@@ -29,14 +29,14 @@ export function Experience() {
       </Reveal>
 
       {/* Timeline */}
-      <div className="relative mt-14 pl-6 sm:pl-8">
+      <div className="relative mt-12 pl-6 sm:pl-8">
         <div className="absolute left-0 top-2 bottom-2 w-px bg-gradient-to-b from-brand-500 via-violet-500 to-transparent" />
         <div className="space-y-10">
           {experience.map((exp, i) => (
             <Reveal key={exp.period} delay={i * 0.1}>
               <div className="relative">
                 <span className="absolute -left-[27px] top-1.5 grid h-4 w-4 place-items-center rounded-full border-2 border-bg bg-brand-500 sm:-left-[35px]">
-                  {exp.role.toLowerCase().includes('b.tech') ? (
+                  {/^(b\.tech|m\.tech|12th|10th|hsc|ssc|.*\bschool\b)/i.test(exp.role) ? (
                     <GraduationCap size={9} className="text-white" />
                   ) : (
                     <Briefcase size={9} className="text-white" />

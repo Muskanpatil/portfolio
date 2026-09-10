@@ -13,7 +13,7 @@ export function ThemeToggle({ theme, toggle }: Props) {
       type="button"
       onClick={toggle}
       aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
-      className="relative grid h-9 w-9 place-items-center rounded-full border border-default bg-card text-soft transition-colors hover:text-brand-500"
+      className="relative grid h-10 w-10 place-items-center rounded-full border border-default bg-card text-soft transition-colors hover:text-brand-500"
     >
       <motion.span
         key={theme}

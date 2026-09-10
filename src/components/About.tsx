@@ -10,7 +10,7 @@ export function About() {
       title="Engineer who owns the full stack — and the domain."
       description={profile.hook}
     >
-      <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr]">
+      <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1.1fr]">
         <Reveal>
           <div className="space-y-5 text-base leading-relaxed text-soft">
             <p>
@@ -30,11 +30,14 @@ export function About() {
               compliant code because the domain demands it, and I explain architectural choices to
               people who are smart but unfamiliar with the domain.
             </p>
+            <p className="text-sm text-muted">
+              Based in {profile.location}. Fluent in {profile.languages.join(', ')}.
+            </p>
           </div>
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {aboutSkillGroups.map((group) => (
               <div
                 key={group.title}

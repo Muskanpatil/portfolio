@@ -11,9 +11,9 @@ export function DeepDives() {
       title="How I think about the hard parts."
       description="Short explainers for the architectural decisions behind the work — because the interesting part is the reasoning, not the buzzwords."
     >
-      <div className="grid gap-6 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {deepDives.map((d, i) => (
-          <Reveal key={d.id} delay={i * 0.08}>
+          <Reveal key={d.id} delay={i * 0.08} className="min-w-0">
             <DeepDiveCard dive={d} />
           </Reveal>
         ))}
@@ -36,14 +36,14 @@ function DeepDiveCard({ dive }: { dive: (typeof deepDives)[number] }) {
   };
 
   return (
-    <div className="flex h-full flex-col rounded-3xl border border-default bg-card p-6 transition-colors hover:border-brand-500/40">
+    <div className="flex h-full min-w-0 flex-col rounded-3xl border border-default bg-card p-6 transition-colors hover:border-brand-500/40">
       <h3 className="font-display text-lg font-700 leading-snug tracking-tight">
         {dive.title}
       </h3>
       <p className="mt-3 text-sm leading-relaxed text-soft">{dive.blurb}</p>
 
       {/* Code block */}
-      <div className="relative mt-5 overflow-hidden rounded-xl border border-default bg-[#0b0e16]">
+      <div className="relative mt-5 min-w-0 overflow-hidden rounded-xl border border-default bg-[#0b0e16]">
         <div className="flex items-center justify-between border-b border-white/5 px-3 py-2">
           <div className="flex items-center gap-1.5">
             <span className="h-2.5 w-2.5 rounded-full bg-red-400/70" />

@@ -54,6 +54,15 @@
 
   html {
     -webkit-text-size-adjust: 100%;
+    /* Offset anchor jumps so section headings clear the fixed navbar (h-16). */
+    scroll-padding-top: 4.5rem;
+  }
+
+  html,
+  body {
+    /* Guard against stray horizontal scroll from decorative/animated elements. */
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   body {

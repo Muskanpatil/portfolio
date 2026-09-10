@@ -18,7 +18,7 @@ export function Projects() {
       title="Systems I designed, built, and shipped."
       description="Three projects from the hospitality SaaS platform — each showing how I approach a hard problem end-to-end, from architecture to impact."
     >
-      <div className="grid gap-6">
+      <div className="grid grid-cols-1 gap-6">
         {projects.map((project, i) => (
           <Reveal key={project.id} delay={i * 0.08}>
             <ProjectCard project={project} index={i} />
@@ -52,7 +52,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         </div>
 
         {/* Right: content */}
-        <div className="flex-1">
+        <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
               <h3 className="font-display text-xl font-700 tracking-tight sm:text-2xl">
@@ -107,7 +107,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                 className="overflow-hidden"
               >
-                <div className="mt-6 grid gap-6 pt-2 sm:grid-cols-2">
+                <div className="mt-6 grid grid-cols-1 gap-6 pt-2 sm:grid-cols-2">
                   <div>
                     <h4 className="flex items-center gap-2 text-xs font-700 uppercase tracking-wider text-muted">
                       <Layers size={14} /> What I Built

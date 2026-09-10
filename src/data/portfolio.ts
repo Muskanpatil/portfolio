@@ -1,15 +1,15 @@
 export const profile = {
   name: 'Muskan Patil',
-  role: 'Full-Stack Engineer',
-  tagline: 'Full-Stack Engineer • Multi-Tenant SaaS • Systems Architecture',
+  role: 'Full-Stack Developer',
+  tagline: 'Full-Stack Developer • Multi-Tenant SaaS • Systems Architecture',
   subheading:
     'I build production-grade multi-tenant SaaS — owning backend architecture, database design, frontend UX, and DevOps end-to-end. Currently scaling enterprise hospitality platforms: PMS integrations, intelligent pricing, and OTA distribution.',
   hook: 'Built hospitality SaaS powering multi-property management, rate intelligence, and OTA distribution for enterprise customers — scaling from 28 microservices to a modern monorepo architecture.',
   email: 'muskanpatil2004@gmail.com',
-  phone: '+91 7974130626',
-  location: 'India',
-  github: '#',
-  linkedin: '#',
+  location: 'Nagpur, Maharashtra, India',
+  languages: ['English', 'Hindi', 'Marathi'],
+  github: 'https://github.com/Muskanpatil',
+  linkedin: 'https://www.linkedin.com/in/muskanpatil/',
   resume: '#',
 };
 
@@ -25,19 +25,30 @@ export const navLinks = [
 export const aboutSkillGroups = [
   {
     title: 'Backend',
-    items: ['Node.js', 'Fastify', 'Express', 'Microservices', 'Event Sourcing'],
+    items: ['Node.js', 'Fastify 5', 'Express', 'Microservices', 'BFF', 'Event Sourcing'],
   },
   {
     title: 'Frontend',
-    items: ['React 19', 'Redux', 'Tailwind', 'PWA', 'SSR'],
+    items: ['React 19', 'Redux Toolkit', 'Tailwind', 'Vite', 'SSR', 'PWA'],
   },
   {
     title: 'Database',
-    items: ['PostgreSQL', 'Drizzle ORM', 'Redis', 'BullMQ', 'pgvector'],
+    items: ['PostgreSQL', 'Drizzle ORM', 'Redis', 'BullMQ', 'pgvector', 'RLS'],
   },
   {
     title: 'Integrations',
-    items: ['Oracle OPERA', 'RMS', 'Booking.com', 'Expedia', 'BrightData', 'OAuth2'],
+    items: [
+      'Oracle OPERA (OHIP)',
+      'RMS Cloud',
+      'GuestPoint',
+      'Booking.com',
+      'Expedia',
+      'BrightData',
+      'Lighthouse',
+      'PredictHQ',
+      'Xero',
+      'OAuth2',
+    ],
   },
   {
     title: 'Architecture',
@@ -65,12 +76,13 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 'hospitality-saas',
-    name: 'Multi-Tenant Hospitality SaaS Platform',
+    name: 'Propeter — Multi-Tenant Hospitality SaaS',
     role: 'Full-Stack Architect & Developer',
     timeline: '2025 – Present • Ideas2Goal',
-    tagline: 'Enterprise PMS unifying reservations, rates, and OTA distribution',
+    tagline: 'Enterprise platform spanning PMS, RMS, and IBE — reservations, rates, and OTA distribution',
     accent: 'brand',
     challenge: [
+      'Unify PMS, RMS, and IBE surfaces on one multi-tenant platform',
       'Support 6+ property management systems (Oracle OPERA, RMS Cloud, GuestPoint)',
       'Maintain strict multi-tenant isolation across 18+ schemas',
       'Comply with GDPR and PCI-DSS SAQ-A standards',
@@ -282,7 +294,7 @@ export const techStackLayers = [
   },
   {
     layer: 'Integrations',
-    items: ['Oracle OPERA', 'RMS', 'BrightData', 'Lighthouse', 'Xero'],
+    items: ['Oracle OPERA', 'RMS Cloud', 'GuestPoint', 'BrightData', 'Lighthouse', 'PredictHQ', 'Xero'],
   },
   {
     layer: 'Architecture',
@@ -296,21 +308,28 @@ export const techStackLayers = [
 
 export const experience = [
   {
-    period: '07/2025 – Now',
+    period: '07/2025 – Present',
     role: 'Full Stack Developer',
-    org: 'Ideas2Goal Technologies',
+    org: 'Ideas2Goal Technologies Pvt Ltd · Nagpur, India',
     points: [
       'Led multi-tenant SaaS scaling (28 microservices → monorepo)',
       'Built unified PMS integration layer (6+ vendors)',
       'Engineered intelligent pricing engine with competitor intelligence',
-      'Achieved GDPR & PCI-DSS compliance',
+      'Built a bulk rate-publish pipeline with advanced error handling and logging',
+      'Delivered a booking site meeting WCAG 2.2 AA and PCI-DSS SAQ-A standards',
     ],
   },
   {
     period: '2021 – 2025',
     role: 'B.Tech in Computer Science & Engineering',
-    org: 'Bansal College of Engineering',
-    points: ['CGPA: 8.0'],
+    org: 'Bansal College of Engineering · Bhopal, India',
+    points: ['CGPA: 8.0 / 10'],
+  },
+  {
+    period: '2020 – 2021',
+    role: '12th (HSC)',
+    org: 'Queen Mary Higher Secondary School · Sausar, India',
+    points: ['Scored 93.4%'],
   },
 ];
 

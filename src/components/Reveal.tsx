@@ -37,12 +37,12 @@ export function Section({ id, eyebrow, title, description, children, className }
   return (
     <section
       id={id}
-      className={`mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 sm:py-28 ${className ?? ''}`}
+      className={`mx-auto w-full max-w-6xl px-5 py-14 sm:px-8 sm:py-20 ${className ?? ''}`}
     >
       <Reveal>
         <SectionHeading eyebrow={eyebrow} title={title} description={description} />
       </Reveal>
-      <div className="mt-12">{children}</div>
+      <div className="mt-8 sm:mt-10">{children}</div>
     </section>
   );
 }
