@@ -7,13 +7,8 @@ export function Experience() {
     <Section
       id="experience"
       eyebrow="Experience & Impact"
-<<<<<<< HEAD
       title="Where I’ve worked, and what I’ve shipped."
       description="A compact timeline of where I’ve worked and what I owned."
-=======
-      title="From microservices to monorepos — and the numbers that came with it."
-      description="A compact timeline of where I’ve worked, what I owned, the measurable outcomes, and where I studied."
->>>>>>> 81fee115ce881e543ed5904057300c35d457ef87
     >
       {/* Achievements metrics */}
       <Reveal>

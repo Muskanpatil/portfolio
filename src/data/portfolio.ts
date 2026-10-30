@@ -1,29 +1,17 @@
 export const profile = {
   name: 'Muskan Patil',
-<<<<<<< HEAD
   role: 'Full-Stack Engineer',
   tagline: 'Full-Stack Engineer • Revenue Management • ML & AI Systems',
-=======
-  role: 'Full-Stack Developer',
-  tagline: 'Full-Stack Developer • Multi-Tenant SaaS • Systems Architecture',
->>>>>>> 81fee115ce881e543ed5904057300c35d457ef87
   subheading:
     'I build Propeter, a multi-tenant hospitality SaaS: pricing engines, demand forecasting, PMS integrations and an AI revenue copilot, end-to-end from Postgres to React.',
   hook: 'Propeter runs pricing, forecasting and PMS sync for live hotel properties. V3 is a Turborepo monorepo of 20+ Fastify services on PostgreSQL 18 and Redis 8. I have shipped 700+ commits to it, across revenue, ML, integrations and the admin app.',
   email: 'muskanpatil2004@gmail.com',
-<<<<<<< HEAD
   phone: '+91 7974130626',
   location: 'Nagpur, India',
+  languages: ['English', 'Hindi', 'Marathi'],
   github: 'https://github.com/muskan-patil-dev',
   linkedin: 'https://linkedin.com/in/muskan-patil-dev',
   resume: '/resume.pdf',
-=======
-  location: 'Nagpur, Maharashtra, India',
-  languages: ['English', 'Hindi', 'Marathi'],
-  github: 'https://github.com/Muskanpatil',
-  linkedin: 'https://www.linkedin.com/in/muskanpatil/',
-  resume: '#',
->>>>>>> 81fee115ce881e543ed5904057300c35d457ef87
 };
 
 export const navLinks = [
@@ -38,7 +26,6 @@ export const navLinks = [
 export const aboutSkillGroups = [
   {
     title: 'Backend',
-<<<<<<< HEAD
     items: ['Node.js', 'Fastify 5', 'Zod', 'Microservices', 'Turborepo'],
   },
   {
@@ -56,36 +43,6 @@ export const aboutSkillGroups = [
   {
     title: 'Integrations',
     items: ['RMS', 'Oracle OPERA', 'GuestPoint', 'Xero', 'BrightData', 'PredictHQ'],
-=======
-    items: ['Node.js', 'Fastify 5', 'Express', 'Microservices', 'BFF', 'Event Sourcing'],
-  },
-  {
-    title: 'Frontend',
-    items: ['React 19', 'Redux Toolkit', 'Tailwind', 'Vite', 'SSR', 'PWA'],
-  },
-  {
-    title: 'Database',
-    items: ['PostgreSQL', 'Drizzle ORM', 'Redis', 'BullMQ', 'pgvector', 'RLS'],
-  },
-  {
-    title: 'Integrations',
-    items: [
-      'Oracle OPERA (OHIP)',
-      'RMS Cloud',
-      'GuestPoint',
-      'Booking.com',
-      'Expedia',
-      'BrightData',
-      'Lighthouse',
-      'PredictHQ',
-      'Xero',
-      'OAuth2',
-    ],
-  },
-  {
-    title: 'Architecture',
-    items: ['Clean Architecture', 'DDD', 'Monorepo', 'Event Sourcing'],
->>>>>>> 81fee115ce881e543ed5904057300c35d457ef87
   },
   {
     title: 'Security',
@@ -108,7 +65,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-<<<<<<< HEAD
     id: 'pricing-engine',
     name: 'Revenue Management & Pricing Engine',
     role: 'Backend & Full-Stack',
@@ -120,20 +76,6 @@ export const projects: Project[] = [
       'Never publish a rate nobody can explain or audit',
       'Overlapping pricing runs must not double-write',
       'Feed in competitor rates and local events',
-=======
-    id: 'hospitality-saas',
-    name: 'Propeter — Multi-Tenant Hospitality SaaS',
-    role: 'Full-Stack Architect & Developer',
-    timeline: '2025 – Present • Ideas2Goal',
-    tagline: 'Enterprise platform spanning PMS, RMS, and IBE — reservations, rates, and OTA distribution',
-    accent: 'brand',
-    challenge: [
-      'Unify PMS, RMS, and IBE surfaces on one multi-tenant platform',
-      'Support 6+ property management systems (Oracle OPERA, RMS Cloud, GuestPoint)',
-      'Maintain strict multi-tenant isolation across 18+ schemas',
-      'Comply with GDPR and PCI-DSS SAQ-A standards',
-      'Distribute rates to 40+ OTA channels (Booking.com, Expedia)',
->>>>>>> 81fee115ce881e543ed5904057300c35d457ef87
     ],
     built: [
       {
@@ -376,15 +318,7 @@ export const techStackLayers = [
   },
   {
     layer: 'Integrations',
-<<<<<<< HEAD
     items: ['RMS', 'Oracle OPERA', 'GuestPoint', 'Lighthouse', 'Xero'],
-=======
-    items: ['Oracle OPERA', 'RMS Cloud', 'GuestPoint', 'BrightData', 'Lighthouse', 'PredictHQ', 'Xero'],
-  },
-  {
-    layer: 'Architecture',
-    items: ['Event Sourcing', 'Clean Architecture', 'DDD'],
->>>>>>> 81fee115ce881e543ed5904057300c35d457ef87
   },
   {
     layer: 'Security',
@@ -398,18 +332,10 @@ export const experience = [
     role: 'Full Stack Developer',
     org: 'Ideas2Goal Technologies Pvt Ltd · Nagpur, India',
     points: [
-<<<<<<< HEAD
       'Core contributor to Propeter V3 (700+ commits) across revenue, pricing, forecasting, PMS sync and the AI copilot',
       'Built PMS adapters for RMS, Oracle OPERA and GuestPoint',
       'Shipped demand/ADR forecasting and the "Peter" multi-agent revenue copilot',
       'Led a database performance audit across revenue, forecasting and worker services',
-=======
-      'Led multi-tenant SaaS scaling (28 microservices → monorepo)',
-      'Built unified PMS integration layer (6+ vendors)',
-      'Engineered intelligent pricing engine with competitor intelligence',
-      'Built a bulk rate-publish pipeline with advanced error handling and logging',
-      'Delivered a booking site meeting WCAG 2.2 AA and PCI-DSS SAQ-A standards',
->>>>>>> 81fee115ce881e543ed5904057300c35d457ef87
     ],
   },
   {

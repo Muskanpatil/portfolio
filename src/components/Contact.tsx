@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { ArrowRight, FileText, Mail, Phone } from 'lucide-react';
-=======
-import { ArrowRight, Mail } from 'lucide-react';
->>>>>>> 81fee115ce881e543ed5904057300c35d457ef87
+import { ArrowRight, FileText, Mail } from 'lucide-react';
 import { profile } from '../data/portfolio';
 import { GithubIcon, LinkedinIcon } from './BrandIcons';
 import { Reveal } from './Reveal';
