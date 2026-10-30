@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, Phone } from 'lucide-react';
+import { ArrowRight, FileText, Mail, Phone } from 'lucide-react';
 import { profile } from '../data/portfolio';
 import { GithubIcon, LinkedinIcon } from './BrandIcons';
 import { Reveal } from './Reveal';
@@ -44,6 +44,14 @@ export function Contact() {
                 className="inline-flex items-center gap-2 rounded-full border border-default bg-bg px-5 py-3 text-sm font-600 text-soft transition-colors hover:text-brand-500"
               >
                 <LinkedinIcon size={16} /> LinkedIn
+              </a>
+              <a
+                href={profile.resume}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex items-center gap-2 rounded-full border border-default bg-bg px-5 py-3 text-sm font-600 text-soft transition-colors hover:text-brand-500"
+              >
+                <FileText size={16} /> Resume
               </a>
             </div>
 

@@ -14,21 +14,20 @@ export function About() {
         <Reveal>
           <div className="space-y-5 text-base leading-relaxed text-soft">
             <p>
-              I build production-grade multi-tenant SaaS from V1 → V2 scaling — owning backend
-              architecture, database design, frontend UX, and DevOps end-to-end. My work lives at
-              the intersection of complex domain problems and the systems that make them tractable.
+              I have worked on Propeter from V1 (Express microservices) to V3, a Turborepo monorepo
+              of Fastify services. I work across the stack: service design, Postgres schemas and
+              query tuning, Python ML pipelines and the React admin app.
             </p>
             <p>
-              At Ideas2Goal I architect hospitality software: property management integrations,
-              rate intelligence, and OTA distribution. That means wrangling 6+ PMS vendors,
-              enforcing strict tenant isolation, and keeping every change auditable for GDPR and
-              PCI-DSS.
+              At Ideas2Goal most of my work is revenue management: the pricing engine that
+              recommends nightly rates, the models that forecast demand and ADR, the PMS adapters
+              that feed them, and "Peter", an AI copilot revenue managers can question in plain
+              English.
             </p>
             <p>
-              I care about decisions that age well — clean module boundaries, event-sourced audit
-              trails, and integrations that scale linearly instead of quadratically. I write secure,
-              compliant code because the domain demands it, and I explain architectural choices to
-              people who are smart but unfamiliar with the domain.
+              Money is involved, so I care about proof: every rate traceable to its inputs, models
+              promoted only when they beat a baseline, tenant isolation enforced by the database,
+              and audit logs that show tampering.
             </p>
           </div>
         </Reveal>

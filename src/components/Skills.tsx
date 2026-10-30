@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion';
-import { skillMatrix, techStackLayers } from '../data/portfolio';
+import { focusAreas, techStackLayers } from '../data/portfolio';
 import { Reveal, Section } from './Reveal';
 
 export function Skills() {
@@ -8,32 +7,21 @@ export function Skills() {
       id="skills"
       eyebrow="Skills & Competencies"
       title="Where I add the most leverage."
-      description="A snapshot of proficiency across the stack — and the tools I reach for, organized by layer."
+      description="What I work on day to day, and the tools I reach for, organized by layer."
     >
       <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-        {/* Skill matrix */}
+        {/* Focus areas */}
         <Reveal>
           <div className="rounded-3xl border border-default bg-card p-6 sm:p-8">
-            <h3 className="font-display text-base font-700 tracking-tight">Proficiency</h3>
-            <div className="mt-6 space-y-5">
-              {skillMatrix.map((skill, i) => (
-                <div key={skill.label}>
-                  <div className="flex items-baseline justify-between">
-                    <span className="text-sm font-600 text-soft">{skill.label}</span>
-                    <span className="font-mono text-xs text-muted">{skill.tier}</span>
-                  </div>
-                  <div className="mt-2 h-2 overflow-hidden rounded-full bg-soft">
-                    <motion.div
-                      className="h-full rounded-full bg-gradient-to-r from-brand-500 to-violet-500"
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true, margin: '-60px' }}
-                      transition={{ duration: 1, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                    />
-                  </div>
-                </div>
+            <h3 className="font-display text-base font-700 tracking-tight">Focus Areas</h3>
+            <ul className="mt-6 space-y-4">
+              {focusAreas.map((area) => (
+                <li key={area.label} className="border-l-2 border-brand-500/60 pl-4">
+                  <p className="text-sm font-600 text-soft">{area.label}</p>
+                  <p className="mt-0.5 text-xs leading-relaxed text-muted">{area.detail}</p>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </Reveal>
 

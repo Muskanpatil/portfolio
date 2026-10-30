@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowRight, ChevronDown, Mail } from 'lucide-react';
+import { ArrowRight, ChevronDown, FileText, Mail } from 'lucide-react';
 import { profile } from '../data/portfolio';
 import { GithubIcon, LinkedinIcon } from './BrandIcons';
 
@@ -82,6 +82,14 @@ export function Hero() {
               className="inline-flex items-center gap-2 rounded-full border border-default bg-card px-5 py-3 text-sm font-600 text-soft transition-colors hover:text-brand-500"
             >
               <Mail size={16} /> Contact
+            </a>
+            <a
+              href={profile.resume}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-flex items-center gap-2 rounded-full border border-default bg-card px-5 py-3 text-sm font-600 text-soft transition-colors hover:text-brand-500"
+            >
+              <FileText size={16} /> Resume
             </a>
             <div className="flex items-center gap-1.5">
               <SocialIcon href={profile.github} label="GitHub">
