@@ -10,8 +10,8 @@ export const profile = {
   phone: '+91 7974130626',
   location: 'Nagpur, India',
   languages: ['English', 'Hindi', 'Marathi'],
-  github: 'https://github.com/muskan-patil-dev',
-  linkedin: 'https://linkedin.com/in/muskan-patil-dev',
+  github: 'https://github.com/Muskanpatil',
+  linkedin: 'https://www.linkedin.com/in/muskanpatil/',
   resume: '/resume.pdf',
 };
 
