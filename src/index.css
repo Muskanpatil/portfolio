@@ -54,6 +54,17 @@
 
   html {
     -webkit-text-size-adjust: 100%;
+    /* Offset anchor jumps so section headings clear the fixed navbar (h-16). */
+    scroll-padding-top: 4.5rem;
+  }
+
+  body {
+    /* Guard against stray horizontal scroll from decorative/animated elements.
+       `clip` (not `hidden`) so the root scroll container / scrollingElement is
+       unchanged — otherwise scroll-padding, scrollIntoView and window.scrollY
+       tracking (navbar glass state) all break. */
+    max-width: 100%;
+    overflow-x: clip;
   }
 
   body {

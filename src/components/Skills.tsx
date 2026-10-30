@@ -9,8 +9,13 @@ export function Skills() {
       title="Where I add the most leverage."
       description="What I work on day to day, and the tools I reach for, organized by layer."
     >
+<<<<<<< HEAD
       <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         {/* Focus areas */}
+=======
+      <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+        {/* Skill matrix */}
+>>>>>>> 81fee115ce881e543ed5904057300c35d457ef87
         <Reveal>
           <div className="rounded-3xl border border-default bg-card p-6 sm:p-8">
             <h3 className="font-display text-base font-700 tracking-tight">Focus Areas</h3>
@@ -27,7 +32,7 @@ export function Skills() {
 
         {/* Tech stack by layer */}
         <Reveal delay={0.1}>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {techStackLayers.map((layer) => (
               <div
                 key={layer.layer}

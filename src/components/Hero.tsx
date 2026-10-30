@@ -26,7 +26,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-16 sm:px-8 sm:pt-24 lg:grid-cols-[1.15fr_0.85fr] lg:pb-28">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-5 pb-12 pt-10 sm:px-8 sm:pt-16 lg:grid-cols-[1.15fr_0.85fr] lg:pb-16">
         {/* Left: copy */}
         <div>
           <motion.div
@@ -46,7 +46,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-6 font-display text-4xl font-800 leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl"
+            className="mt-6 font-display text-[2rem] font-800 leading-[1.08] tracking-tight [overflow-wrap:anywhere] sm:text-5xl sm:leading-[1.05] lg:text-6xl"
           >
             {profile.tagline.split('•').map((part, i, arr) => (
               <span key={i} className="block">
@@ -107,7 +107,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: reduce ? 1 : 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className="relative mx-auto aspect-square w-full max-w-sm"
+          className="relative mx-auto aspect-square w-full max-w-[240px] sm:max-w-sm"
         >
           <NodeNetwork />
         </motion.div>
@@ -117,7 +117,7 @@ export function Hero() {
       <motion.a
         href="#about"
         aria-label="Scroll to about"
-        className="mx-auto mb-10 flex w-fit flex-col items-center gap-1 text-muted"
+        className="mx-auto mb-4 flex w-fit flex-col items-center gap-1 text-muted sm:mb-6"
         animate={{ y: [0, 6, 0] }}
         transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
       >
