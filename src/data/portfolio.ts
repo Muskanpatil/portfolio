@@ -2,6 +2,7 @@ export const profile = {
   name: 'Muskan Patil',
   role: 'Full-Stack Engineer',
   tagline: 'Full-Stack Engineer • Revenue Management • ML & AI Systems',
+  headline: { lead: 'I build the systems that price', accent: 'hotel rooms.' },
   subheading:
     'I build Propeter, a multi-tenant hospitality SaaS: pricing engines, demand forecasting, PMS integrations and an AI revenue copilot, end-to-end from Postgres to React.',
   hook: 'Propeter runs pricing, forecasting and PMS sync for live hotel properties. V3 is a Turborepo monorepo of 20+ Fastify services on PostgreSQL 18 and Redis 8. I have shipped 700+ commits to it, across revenue, ML, integrations and the admin app.',
